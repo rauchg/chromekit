@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>ChromeKit</title>
+		
+		<!-- Base -->
+		<link rel="stylesheet" href="css/base.css" type="text/css" charset="utf-8">
+		<link rel="stylesheet" href="css/window.css" type="text/css" charset="utf-8">
+		<link rel="stylesheet" href="css/components/tabs.css" type="text/css" charset="utf-8">
+		<link rel="stylesheet" href="css/chrome.css" type="text/css" charset="utf-8">
+		<link rel="stylesheet" href="css/overlay.css" type="text/css" charset="utf-8">
+		
+		<!-- 3d Flip -->
+		<link rel="stylesheet" href="css/manager.flip.3d.css" type="text/css" charset="utf-8">
+		
+		<!-- Demo page css -->
+		<link rel="stylesheet" href="demo/css/demo.css" type="text/css" charset="utf-8">
+
+		<!-- Base -->
+		<script type="text/javascript" charset="utf-8" src="js/mootools.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/chromekit.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/gadget.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/window.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/manager.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/overlay.js"></script>
+		
+		<!-- Expose -->
+		<script type="text/javascript" charset="utf-8" src="js/fx.matrix.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/manager.expose.js"></script>
+		
+		<!-- 3D Flip -->
+		<script type="text/javascript" charset="utf-8" src="js/manager.flip.3d.js"></script>
+				
+		<!-- Demo initialization -->
+		<script type="text/javascript" charset="utf-8" src="demo/js/demo.js"></script>
+	</head>
+	<body class="chrome">
+		
+		<h1>ChromeKit</h1>
+		
+		<p><button id="add-20-windows">Add 20 random windows</button></p>
+		<p><button id="toggle-chrome">Toggle optimize mode / Simulate browser degradation</button> (this simply toggles the class "chrome" from the <code>&lt;body&gt;</code> tag)</p>
+		<p><button id="do-3dflip">3D Flip (press `n` to toggle windows)</button> <button id="do-expose" disabled>Expose</button></p>
+		
+		<!-- first window -->
+		<div class="window widget" id="window-1">
+			<div class="titlebar">
+				<h1>Sample Window</h1>
+
+				<ul class="controls">
+					<li><a href="#" class="button-close">x</a></li>
+					<li><a href="#" class="button-minimize">-</a></li>
+					<li><a href="#" class="button-maximize">+</a></li>
+				</ul>				
+			</div>
+			
+			<div class="body">
+				<p>This is the most basic window.</p>
+			</div>
+			
+			<div class="footer"></div>
+		</div>
+		
+		<!-- second window -->
+		<div class="window widget" id="window-2">
+			<div class="titlebar">
+				<h1>Sample Window</h1>
+
+				<ul class="controls">
+					<li><a href="#" class="button-close">x</a></li>
+					<li><a href="#" class="button-minimize">-</a></li>
+					<li><a href="#" class="button-maximize">+</a></li>
+				</ul>				
+			</div>
+			
+			<div class="tabs">
+				<ul>
+					<li><a href="#">First tab</a></li>
+					<li><a href="#">Second tab</a></li>
+				</ul>
+			</div>
+			
+			<div class="body">
+				<div class="tab-container">					
+					<p>This window has a Tabs component.</p>
+					<p>This is Tab 1</p>
+				</div>
+				
+				<div class="tab-container">					
+					<p>This is Tab 2</p>
+				</div>
+			</div>
+			
+			<div class="footer"></div>
+		</div>
+		
+		<!-- third window -->
+		<div class="window widget" id="window-3">
+			<div class="titlebar">
+				<h1>Sample Window</h1>
+
+				<ul class="controls">
+					<li><a href="#" class="button-close">x</a></li>
+					<li><a href="#" class="button-minimize">-</a></li>
+					<li><a href="#" class="button-maximize">+</a></li>
+				</ul>				
+				
+				<div class="toolbar">
+					<ul>
+						<li class="toolbar-button">
+							<a href="#">◀</a>
+						</li>
+						<li class="toolbar-button">
+							<a href="#">▶</a>
+						</li>
+						<li id="demo-toolbar-input">
+							<input type="text" value="" />
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="body">
+				Test
+			</div>
+			
+			<div class="footer"></div>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,66 @@
+body.chrome .window {
+	-webkit-box-shadow: 0 1px 5px #000;
+	-moz-box-shadow:  0 1px 5px #000;
+	border: none;
+}
+
+body.chrome .window .titlebar {
+	background:  -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(155,155,155)), to(rgb(115,115,115)));
+	background-image:  -moz-linear-gradient( 0% 0%, 0% 100%, from(rgb(155,155,155)), to(rgb(115,115,115)));
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	position: relative;
+	top: -5px; /* we hide the flakey rendering of box-shadow + border-radius */
+}
+
+body.chrome .window.window-focus .titlebar {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(65,65,65)), to(rgb(35,35,35)));
+}
+
+body.chrome .window .titlebar h1 {
+	text-shadow: 0 1px 0 #ccc;
+}
+
+body.chrome .window.window-focus .titlebar h1 {
+	text-shadow: 0 1px 0 #000;
+}
+
+body.chrome .window .titlebar .controls li a {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	background: -webkit-gradient(radial, 10 10, 1, 7 15, 15, color-stop(0.7, #B5B1BE), from(#D9DFD9), to(#FFF));
+	text-shadow: 0 1px 0 #fff;
+	color: #000;
+}
+
+body.chrome .window.window-focus .titlebar .controls li a {
+	background: -webkit-gradient(radial, 10 10, 1, 7 15, 15, color-stop(0.7, #61676F), from(#C3D0DF), to(#FFF));
+}
+
+body.chrome .window .footer {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(155,155,155)), to(rgb(103,103,103)));
+}
+
+body.chrome .window.window-focus .footer {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(30,30,30)), to(rgb(13,13,13)));
+}
+
+/* Tabs */
+
+body.chrome .window .tabs ul {
+	margin-top: -5px;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EBEBEB), to(#D8D8D8));
+}
+
+body.chrome .window .tabs ul li.active a {
+	-webkit-border-radius: 8px;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#C9C9C9), to(#A6A6A6));	
+}
+
+/* Toolbar */
+
+body.chrome .window .titlebar .toolbar li.toolbar-button {	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}

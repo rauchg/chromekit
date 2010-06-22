@@ -1,0 +1,158 @@
+body {
+	overflow: hidden !important;
+}
+
+.window {
+	width: 500px;
+	position: absolute;
+	background: #fff;
+	border: 1px solid #333;
+}
+
+.window .titlebar {
+	min-height: 35px;
+	vertical-align: top;
+	background-color: #666;
+	border-bottom: 1px solid #575757;
+}
+
+.window.window-focus .titlebar {
+	background-color: #333;
+}
+
+.window .titlebar h1 {
+	font-size: 12px;
+	line-height: 35px;
+	text-align: center;
+	margin: 0;
+	font-weight: normal;
+	color: #333;
+	cursor: default;
+}
+
+.window.window-focus .titlebar h1 {
+	color: #fff;
+}
+
+.window .titlebar .controls {
+	position: absolute;
+	left: 10px;
+	line-height: 35px;
+	top: -1px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.window .titlebar .controls li {
+	display: inline-block;
+}
+
+.window .titlebar .controls li a {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	text-decoration: none;
+	background: #444;
+	line-height: 14px;
+	text-align: center;
+	text-indent: -5000px;
+	font-weight: bold;
+	font-size: 9px;
+	color: #fff;
+}
+
+.window .titlebar .controls:hover li a, .window .titlebar .controls li a:hover {
+	text-indent: 0;
+	text-decoration: none;
+}
+
+.window .titlebar .toolbar {
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+.window .titlebar .toolbar ul {
+	margin: 0;
+	padding: 0;
+}
+
+.window .titlebar .toolbar li {
+	display: inline-block;
+	margin-right: 6px;
+	list-style-type: none;
+}
+
+.window .titlebar .toolbar li.toolbar-button {
+	padding: 1px;
+	border: 1px solid #666;
+	background: #888;
+}
+
+.window.window-focus .titlebar .toolbar li.toolbar-button {
+	border: 1px solid #151515;
+	background: #212121;
+}
+
+.window .titlebar .toolbar li.toolbar-button a, .window .titlebar .toolbar li.toolbar-button a:hover {
+	text-decoration: none;
+	display: inline-block;
+	width: 22px;
+	text-align: center;
+	font-size: 9px;
+	line-height: 17px;
+	vertical-align: middle;
+	border: 1px solid #999;
+	background: #C1C1C1;
+	color: #7F7F7F;
+}
+
+.window.window-focus .titlebar .toolbar li.toolbar-button a, .window.window-focus .titlebar .toolbar li.toolbar-button a:hover {
+	border: 1px solid #252525;
+	background: #2B2B2B;
+	color: #e1e1e1;	
+}
+
+.window .titlebar .toolbar li.toolbar-button a:active {
+	opacity: 0.5;
+}
+
+.window .body {
+	background: #fff;
+}
+
+.window .footer {
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+	background-color: #666;
+	height: 14px;	
+}
+
+.window.window-focus .footer {
+	background-color: #333;
+	border-top: 1px solid #121212;
+	border-bottom: 1px solid #2A2A2A;
+}
+
+.window .gripper-resize {
+	display: block;
+	width: 11px;
+	height: 10px;
+	/* thanks data: URI kitchen: http://software.hixie.ch/utilities/cgi/data/data */
+	background: url(data:image/gif,GIF89a%0B%00%0A%00%80%00%00VVV%FF%FF%FF!%F9%04%01%07%00%01%00%2C%00%00%00%00%0B%00%0A%00%00%02%11%8C%7F%80%AB%9B%FE%60h%86Nd3%DE%B1%26%ED%15%00%3B);
+	position: absolute;
+	right: 1px;
+	bottom: 2px;
+	/*cursor: nwse-resize;*/
+}
+
+/* serve resize.gif for IE6/7 with valid CSS */
+* html .window .footer .gripper-resize { background: url('../img/grip.gif'); } /* IE 6 */
+*:first-child+html .window .footer .gripper-resize { background: url('../img/grip.gif'); } /* IE 7 */
+
+.window-manager {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 500;
+}

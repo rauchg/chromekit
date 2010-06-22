@@ -1,0 +1,27 @@
+.window .tabs ul {
+ 	margin: 0 0 0 0;
+	padding: 4px 8px;
+	background-color: #EBEBEB;
+	border-bottom: 1px solid #C0C0C0;
+}
+
+.window .tabs ul li {
+	list-style-type: none;
+	display: inline;
+}
+
+.window .tabs ul li.active {	
+}
+
+.window .tabs ul li a {
+	display: inline-block;
+	padding: 3px 8px;
+	text-decoration: none;
+	color: #3D3D3D;
+	font-weight: bold;
+	text-shadow: 0 1px 0 #fff;
+}
+
+.window .tabs ul li.active a {	
+	background-color: #C9C9C9;
+}

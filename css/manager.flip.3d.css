@@ -1,0 +1,14 @@
+.window-manager_3dflip {
+	-webkit-perspective: 1000;
+	-webkit-perspective-origin-x: 50%; -webkit-perspective-origin-y: 50%;
+	-webkit-transform-style: preserve-3d;
+}
+
+.window-manager_3dflip .window {
+	-webkit-transform-style: preserve-3d;
+}
+
+.window-manager_3dflip .window.window-focus {
+	-webkit-box-shadow: 0 1px 15px #25AEF5;
+	-moz-box-shadow:  0 1px 15px #25AEF5;  /* 10 used to be 5*/
+}

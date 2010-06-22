@@ -1,0 +1,42 @@
+body {
+	background: #eee;
+}
+
+.window .body {
+	padding: 10px 15px;
+}
+
+.window .body p {
+	margin: 10px 0;
+}
+
+#window-1 {				
+	left: 100px;
+	top: 200px;
+}
+
+#window-2 {
+	left: 700px;
+	top: 200px;
+}
+
+#window-3 {
+	left: 100px;	
+	top: 500px;
+	min-width: 375px;
+}
+
+#window-1 .body, #window-2 .body {
+	height: 200px;
+}
+
+#demo-toolbar-input {
+	width: 75%;
+}
+
+#demo-toolbar-input input {
+	width: 100%;
+	position: relative;
+	top: 1px;
+	padding: 3px 2px 2px;
+}
