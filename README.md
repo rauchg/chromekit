@@ -3,6 +3,8 @@ ChromeKit
 
 ChromeKit is a toolkit engineered to deliver a desktop-like experience in a web browser, with CSS3 and HTML5, and some healthy bits of JavaScript.
 
+Check out the demo [here](http://devthought.com/wp-content/projects/chromekit/).
+
 ![Screenshot](http://cl.ly/1Rqs/content)
 
 Project Goals
